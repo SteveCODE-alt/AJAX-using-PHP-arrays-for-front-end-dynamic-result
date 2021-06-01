@@ -14,9 +14,9 @@ $(document).on('click','#btnId',function (event) {
         
 $('#formId')[0].reset();  
 
-var convertObject = JSON.parse(response); // ken this convert JSON object to json array which javascript can use to get array keys and values like code and messages
-var rawMessage =  JSON.stringify(convertObject.message);   //ken this convert message in the array to string
-var responseMessage = rawMessage.toString().replace(/"/g, "");  // ken this removes "" quotes
+var convertObject = JSON.parse(response); //  this convert JSON object to json array which javascript can use to get array keys and values like code and messages
+var rawMessage =  JSON.stringify(convertObject.message);   // this convert message in the array to string
+var responseMessage = rawMessage.toString().replace(/"/g, "");  //  this removes "" quotes
 
 //FOR WEAK ERROR MESSAGES
          if(convertObject.code === 400 ){
