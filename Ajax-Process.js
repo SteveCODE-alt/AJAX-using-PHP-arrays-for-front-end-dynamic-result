@@ -5,7 +5,7 @@ $(document).on('click','#btnId',function (event) {
 
   
     $.ajax({
-        url: "serverProcessor/loginPHP.php",
+        url: "phpProcessor.php",
         data: formData,
         processData: false,
         contentType: false,
