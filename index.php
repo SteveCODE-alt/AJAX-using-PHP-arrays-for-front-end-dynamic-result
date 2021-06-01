@@ -15,7 +15,7 @@
     </div>
     <div class="row clearfix">
       <div class="">
-        <form>
+        <form id="formId" method="POST">
           <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
             <input type="email" name="email" placeholder="Email" required />
           </div>
@@ -37,8 +37,12 @@
               </div>
             </div>
           </div>
+          
+          <br>
+          <p id="resultId"></p>
+          <br>
             
-          <input class="button" type="submit" value="Register" />
+          <input class="button" id="btnId" type="submit" value="Register" />
         </form>
       </div>
     </div>
@@ -47,5 +51,6 @@
 
 <!-- partial -->
   <script src='https://use.fontawesome.com/4ecc3dbb0b.js'></script>
+  <script src='Ajax-Process.js'></script>
 </body>
 </html>
